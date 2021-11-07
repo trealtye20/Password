@@ -58,22 +58,17 @@ var userCharPool = [];
     userCharPool = userCharPool = userCharPool.concat(upperCaseCharArr);
     console.log(userCharPool);
 
-    // TODO: copy the one char randomly selected from this character set to the guaranteed array
 
   }
 
   if (userChoiceLowerCase) {
     copyArrayToPool(lowerCaseCharArr);
 
-    // TODO: copy the one char randomly selected from this character set to the guaranteed array
-
   }
 
   if (userChoiceNumbers) {
     userCharPool = userCharPool.concat(numbersArr);
     console.log(userCharPool);
-
-    // TODO: copy the one char randomly selected from this character set to the guaranteed array
 
   };
 
@@ -85,12 +80,10 @@ var userCharPool = [];
     aPassword.push(userCharPool[index]);
 
   }
+
   console.log(aPassword);
 
-  // TODO: replace the first characters in the passwrod array with the characters in the guaranteed array
-
   console.log(aPassword.join(""));
-
 
 function writePassword() {
   var password = generatePassword();
@@ -103,4 +96,10 @@ function writePassword() {
 }
 
 generatePasswordIDBtn.addEventListener("click", writePassword);
+
+function generatePassword() {
+  password.value = aPassword.join("");
+
+  return;
+}
 
